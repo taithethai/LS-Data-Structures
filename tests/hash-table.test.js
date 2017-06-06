@@ -36,6 +36,7 @@ describe('HashTable', () => {
   it('should properly handle collisions', () => {
     hashTable.insert('B', 'First Value');
     hashTable.insert('HI!', 'Second Value');
+    console.log('>>>>>>>>', hashTable.retrieve('B'));
     expect(hashTable.retrieve('B')).toBe('First Value');
     expect(hashTable.retrieve('HI!')).toBe('Second Value');
   });
